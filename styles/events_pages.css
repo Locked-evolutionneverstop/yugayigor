@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ec3c3c;
+    color: white;
+    height: 150px;
+}
+
+.nav_logo img {
+    width: 500px;
+    height: auto;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav_item {
+    font-size: large;
+    font-weight: 600;
+    margin: 0 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #075f6d;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown_item {
+    padding: 10px 20px;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dropdown_item:hover {
+    background-color: #0d0261;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.nav_item a, .dropdown_item a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav_item a::after, .dropdown_item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav_item a:hover::after, .dropdown_item a:hover::after {
+    width: 100%;
+}
+
+.container {
+    height: 530px;
+    background-color: #06012e;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .event-section {
+    padding-top: 40px;
+    flex: 1;
+  }
+  
+.event-section_text{
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+
+.event-section_text h1{
+    font-size: 30px;
+    color: white;
+}
+
+.event-section_text p{
+    color: white;
+}
+
+  .gallery {
+    padding-left: 50px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .gallery_item{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .gallery_item_1{
+    background-image: url(../img/marriotnye.jpg);
+  }
+
+  .gallery_item_2{
+    background-image: url(../img/marriot2.jpg);
+  }
+
+  .tickets {
+    z-index: 10;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 1%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+  }
+  
+  .tickets h2 {
+    font-size: 40px;
+
+  }
+
+  .tickets h3{
+    font-size: 15px;
+    text-wrap: nowrap;
+    line-height: 0.3;
+  }
+  
+  .feat_cont{
+    padding-top: 23px;
+  }
+
+  .tickets span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .tickets button {
+    margin: 10px;
+    background-color: rgb(240, 156, 0);
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 100px;
+  }
+  
+  .tickets button:hover {
+    background-color: darkorange;
+  }
+  
+
+  .modal {
+    z-index: 8;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  .modal-content .close {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .recommend-section {
+    background-color: rgb(251, 255, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recommend-section h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.recommend-list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2;
+}
+
+.recommend-list li {
+    position: relative;
+    margin-left: 40px; 
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+
+.recommend-list li::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); 
+}
+
+span.liwrapped{
+    text-wrap: break-word;
+    max-width: 600px;
+    white-space: normal;
+    display: inline-block;
+}
+
+.event-info-section {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.event-info-section h2 {
+    padding-left: 30%;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.info-cards {
+    max-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #ff9c39, #ffc767);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 1em;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.footer {
+    background-color: #0a0f25;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+ 
+  .footer-logo img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #ff6933;
+  }
+  
+
+  .gallery_item_1_hbinf{
+    background-image: url(../img/yachtnye.jpg);
+  }
+
+  .gallery_item_2_hbinf{
+    background-image: url(../img/yacht2.jpg);
+  }
+
+  .gallery_item_1_ab42{
+    background-image: url(../img/applebeesnye.jpg);
+  }
+
+  .gallery_item_2_ab42{
+    background-image: url(../img/applebees2.jpg);
+  }
+
+  .gallery_item_1_phd{
+    background-image: url(../img/phdnye.jpg);
+  }
+
+  .gallery_item_2_phd{
+    background-image: url(../img/phd2.jpg);
+  }
+
+  .gallery_item_1_gotham{
+    background-image: url(../img/gothamhallnye\ \(1\).jpg);
+  }
+
+  .gallery_item_2_gotham{
+    background-image: url(../img/gothamhallnye2.jpg);
+  }
+
+  .gallery_item_1_din{
+    background-image: url(../img/havananye.jpg);
+  }
+
+  .gallery_item_2_din{
+    background-image: url(../img/havana2.png);
+  }
+
+  .gallery_item_1_slate{
+    background-image: url(../img/slatenye.jpg);
+  }
+
+  .gallery_item_2_slate{
+    background-image: url(../img/slate2.jpeg);
+  }
+
+  .gallery_item_1_gt{
+    background-image: url(../img/goldietavernnye.jpeg);
+  }
+
+  .gallery_item_2_gt{
+    background-image: url(../img/gtnye.jpg);
+  }
+
+  .gallery_item_1_brook{
+    background-image: url(../img/brooklynye.webp);
+  }
+
+  .gallery_item_2_brook{
+    background-image: url(../img/brook2.webp);
+  }
+
+  .gallery_item_1_muset{
+    background-image: url(../img/musetteyacht.webp);
+  }
+
+  .gallery_item_2_muset{
+    background-image: url(../img/yachtmuset2.webp);
+  }
+
+  .gallery_item_1_oasis{
+    background-image: url(../img/oasiswynwood.webp);
+  }
+
+  .gallery_item_2_oasis{
+    background-image: url(../img/oasis2.jpg);
+  }
+
+  .gallery_item_1_emp{
+    background-image: url(../img/empressyacht1.jpg);
+  }
+
+  .gallery_item_2_emp{
+    background-image: url(../img/empyacht2.jpg);
+  }
