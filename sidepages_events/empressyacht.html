@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empress Yacht</title>
+    <link rel="stylesheet" href="../styles/events_pages.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="../mainpage.html"><img src="../img/CELEBRATENYELOGO.png" alt="logo"></a>
+        </div>
+        <ul class="nav_list">
+            <li class="nav_item"><a href="../sidepages/about_us.html" target="_blank">About Us</a></li>
+            <li class="nav_item dropdown">
+                <a href="#your-city">Your City</a>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a href="../sidepages/new_york.html">New York</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/miami.html">Miami</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/brooklyn.html">Brooklyn</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/sanfrancisco.html">San Francisco</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="#cards-container">Events</a></li>
+            <li class="nav_item contact-button"><a href="#contact">Contact</a></li>
+        </ul>        
+    </nav>
+    <div class="container">
+        <div class="event-section">
+            <div class="event-section_text">
+          <h1>Empress Yacht SF New Years Eve</h1>
+        <p>The Best San Francisco New Year’s Eve Boat Party Out There!</p></div>
+          <div class="gallery">
+            <div class="gallery_item gallery_item_1_emp"></div>
+            <div class="gallery_item gallery_item_2_emp"></div>
+          </div>
+        </div>
+        <div class="tickets" id="tickets">
+          <h2>Tickets</h2>
+          <p>From: <span>$219</span></p>
+          <button id="buy-tickets">Buy Tickets</button>
+          <div class="feat_cont">
+          <h3>Instant Confirmation</h3> <br>
+          <h3>Secure Checkout </h3><br>
+          <h3>Dedicated Concierge</h3></div>
+        </div>
+      </div>
+    
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Purchase Tickets</h2>
+          <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" required>
+            <button type="submit">Confirm Purchase</button>
+          </form>
+        </div>
+      </div>
+      <div class="recommend-section">
+        <h2>Why We Recommend</h2>
+        <ul class="recommend-list">
+            <li>
+                <span class="liwrapped">
+                    Enter 2025 on a wild NYE party cruise in the Golden City aboard the Empress Yacht! We’re ending the year with a bang; cruising on The Bay, dancing, drinking, and getting the absolute best views of the annual fireworks show. Sounds like fun, doesn’t it? Order your tickets to this superb San Francisco New Year’s Eve yacht party now, before it’s too late.</span>
+            </li>
+            
+            
+        </ul>
+    </div>
+    <div class="event-info-section">
+        <h2>Event Details</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>Tickets Available</h3>
+                <p>150 Tickets</p>
+            </div>
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>Empress Yacht San Francisco
+
+                    Pier 40 - 89 King Street
+                    
+                    San Francisco, CA 94107</p>
+            </div>
+            <div class="info-card">
+                <h3>Time</h3>
+                <p>Boarding:	Dec 31, 2025 @ 9:30 PM PDT <br>
+                    Departing:	Dec 31, 2025 @ 10:00 PM PDT <br>
+                    Returning:	Jan 01, 2026 @ 1:00 AM PDT
+                    
+                    
+                    
+                    </p>
+            </div>
+            <div class="info-card">
+                <h3>Price</h3>
+                <p>From: 219$</p>
+            </div>
+            <div class="info-card">
+                <h3>Minimum Age</h3>
+                <p>21+</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-logo">
+          <img src="../img/CELEBRATENYELOGO.png" alt="NEWYEARS.com logo">
+        </div>
+        <nav class="footer-nav">
+          <a href="#">Happy</a>
+          <a href="#">New</a>
+          <a href="#">2025</a>
+          <a href="#">YEAR</a>
+        </nav>
+        made by .
+      </footer>
+      <script src="../script/events.js"></script>
+</body>
+</html>

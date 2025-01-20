@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldie's tavern</title>
+    <link rel="stylesheet" href="../styles/events_pages.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="../mainpage.html"><img src="../img/CELEBRATENYELOGO.png" alt="logo"></a>
+        </div>
+        <ul class="nav_list">
+            <li class="nav_item"><a href="../sidepages/about_us.html" target="_blank">About Us</a></li>
+            <li class="nav_item dropdown">
+                <a href="#your-city">Your City</a>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a href="../sidepages/new_york.html">New York</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/miami.html">Miami</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/brooklyn.html">Brooklyn</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/sanfrancisco.html">San Francisco</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="#cards-container">Events</a></li>
+            <li class="nav_item contact-button"><a href="#contact">Contact</a></li>
+        </ul>        
+    </nav>
+    <div class="container">
+        <div class="event-section">
+            <div class="event-section_text">
+          <h1>Goldie's Tavern New York New Year's Eve Party</h1>
+          </div>
+          <div class="gallery">
+            <div class="gallery_item gallery_item_1_gt"></div>
+            <div class="gallery_item gallery_item_2_gt"></div>
+          </div>
+        </div>
+        <div class="tickets" id="tickets">
+          <h2>Tickets</h2>
+          <p>From: <span>$89</span></p>
+          <button id="buy-tickets">Buy Tickets</button>
+          <div class="feat_cont">
+          <h3>Instant Confirmation</h3> <br>
+          <h3>Secure Checkout </h3><br>
+          <h3>Dedicated Concierge</h3></div>
+        </div>
+      </div>
+    
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Purchase Tickets</h2>
+          <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" required>
+            <button type="submit">Confirm Purchase</button>
+          </form>
+        </div>
+      </div>
+      <div class="recommend-section">
+        <h2>Why We Recommend</h2>
+        <ul class="recommend-list">
+            <li>
+                <span class="liwrapped">
+                    Goldie’s Tavern is the midtown Cocktail bar in the heart of New York City that offers a great event to celebrate New Year's Eve. With a five-hour open bar, complimentary appetizers, great music, and everything you could need to ring in the new year.</span>
+            </li>
+        </ul>
+    </div>
+    <div class="event-info-section">
+        <h2>Event Details</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>Tickets Available</h3>
+                <p>300 Tickets</p>
+            </div>
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>Goldie's Tavern
+
+                    135 West 30th Street
+                    
+                    Between 6th Avenue & 7th Avenue
+                    
+                    New York, NY 10001</p>
+            </div>
+            <div class="info-card">
+                <h3>Time</h3>
+                <p>Start:	Dec 31, 2024 @ 8:00 PM EST <br>
+                    End:	Jan 01, 2025 @ 4:00 AM EST
+                    
+                    
+                    </p>
+            </div>
+            <div class="info-card">
+                <h3>Price</h3>
+                <p>From: 89$</p>
+            </div>
+            <div class="info-card">
+                <h3>Minimum Age</h3>
+                <p>21+</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-logo">
+          <img src="../img/CELEBRATENYELOGO.png" alt="NEWYEARS.com logo">
+        </div>
+        <nav class="footer-nav">
+          <a href="#">Happy</a>
+          <a href="#">New</a>
+          <a href="#">2025</a>
+          <a href="#">YEAR</a>
+        </nav>
+        made by .
+      </footer>
+      <script src="../script/events.js"></script>
+</body>
+</html>
