@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Francisco NYE</title>
+    <link rel="stylesheet" href="../styles/city_styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="../mainpage.html"><img src="../img/CELEBRATENYELOGO.png" alt="logo"></a>
+        </div>
+        <ul class="nav_list">
+            <li class="nav_item"><a href="../sidepages/about_us.html" target="_blank">About Us</a></li>
+            <li class="nav_item dropdown">
+                <a href="#your-city">Your City</a>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a href="../sidepages/new_york.html">New York</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/miami.html">Miami</a></li>
+                    <li class="dropdown_item"><a href="../sidepages/brooklyn.html">Brooklyn</a></li>
+                    <li class="dropdown_item"><a href=" ">San Francisco</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="#cards-container">Events</a></li>
+            <li class="nav_item contact-button"><a href="#contact">Contact</a></li>
+        </ul>        
+    </nav>
+    <div class="marquee">
+        <div class="marquee-content" id="marqueeContent">
+            
+        </div>
+    </div>
+    <h1 class="section-title">San Francisco events</h1>
+    <h1 class="found-title">We found <span>1</span> San Francisco events</h1>
+    <div class="cards-container">
+        <div class="card">
+            <a href="../sidepages_events/empressyacht.html">
+            <img src="../img/empressyacht.webp" alt="yacht">
+            <div class="card-content">
+                <div class="card-title">Empress Yacht San Francisco
+                </div>
+                <div class="card-info">Pier 40 - 89 King Street, San Francisco, CA, 94107 <br>
+
+                    Dec 31, 2025 at 9:30 PM PDT
+                    
+                    </div>
+                <div class="card-price">From: $219</div>
+            </div>
+        </div>
+       </a>
+        </div>
+    </div>
+    <section class="whyus">
+    <div class="whyus_card whyus_San Francisco_card">
+        <div class="whyus_content">
+        <div class="whyus_links">
+            <a href="../mainpage.html">Home</a> / <a href="#">Cities</a> / <a href="#">San Francisco</a>
+        </div>
+        
+        <div class="title">San Francisco New Year's Eve Events</div>
+        <div class="subtitle">Experience the Ultimate New Year's Eve Celebration</div>
+        <ul class="features">
+            <li><strong>Artistic Atmosphere:</strong> Celebrate in the heart of NYC's most creative borough. 🎨</li>
+            <li><strong>Iconic Locations:</strong> Events at iconic spots like Williamsburg and Dumbo. 🏙️</li>
+            <li><strong>Relaxed Vibes:</strong> A perfect blend of laid-back celebrations and exciting nightlife. 🎶</li>
+            <li><strong>Community Spirit:</strong> Join vibrant crowds for a truly unforgettable experience. 🥳</li>
+        </ul></div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-logo">
+      <img src="../img/CELEBRATENYELOGO.png" alt="NEWYEARS.com logo">
+    </div>
+    <nav class="footer-nav">
+      <a href="#">Happy</a>
+      <a href="#">New</a>
+      <a href="#">2025</a>
+      <a href="#">YEAR</a>
+    </nav>
+    made by .
+  </footer>
+  <div class="modal" id="add-event-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Add Your Event</h2>
+        <form id="add-event-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+    <script>
+        const marqueeContent = document.getElementById('marqueeContent');
+        const text = "San Francisco";
+        const spaceBetweenWords = 100; 
+        const fontSize = 32; 
+        const wordWidth = (text.length * fontSize) / 2; 
+        const totalWidth = wordWidth + spaceBetweenWords; 
+        const screenWidth = window.innerWidth;
+
+       
+        const repeatTimes = Math.ceil(screenWidth / totalWidth) + 2;
+
+        
+        for (let i = 0; i < repeatTimes * 2; i++) { 
+            const span = document.createElement('span');
+            span.textContent = text;
+            marqueeContent.appendChild(span);
+        }
+
+       
+        const animationDuration = (totalWidth * repeatTimes) / 80; 
+        document.querySelector('.marquee-content').style.animationDuration = `${animationDuration}s`;
+    </script>
+    <script src="../script/script.js"></script>
+</body>
+</html>
